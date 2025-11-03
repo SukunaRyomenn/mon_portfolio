@@ -3,213 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    
+    <!-- Icones -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Mon CSS -->
     <link rel="stylesheet" href="style.css">
-    <title>Raissa portffolio</title>
+
+    <title>Raissa Portfolio</title>
 </head>
 <body>
 
-   
-
-
-    <header class="navbar">
-        <nav class="navbar-container">
-            <ul class="navbar-links">
-                <li class="active"><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#competences">Competences</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-            <div class="menu-toggle" onclick="toggleMenu()">
-              ☰
-          </div>
-        </nav>
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-lg fixed-top bg-dark bg-opacity-50">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#home">Raissa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon text-white">☰</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item"><a class="nav-link active text-white" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#competences">Competences</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
+    <!-- Section Home -->
     <main>
-       
-        <section class="home" id="home">
-            <div class="shine-text">
-           
-                <h3>Hi ! I'm </h3>
-                <h1> MESSAN Astrid-Raissa</h1>
-                <h3>Je suis un 
-                    <span data-text="Developpeur Web...">Developpeur Web ..</span>
-                   
-                
+        <section class="home d-flex flex-column flex-lg-row align-items-center justify-content-center text-center text-lg-start section-animate" id="home">
+            <!-- Texte -->
+            <div class="shine-text me-lg-5">
+                <h3>Hello! Je suis</h3>
+                <h1 class="display-4 fw-bold">MESSAN Astrid-Raissa</h1>
+                <h3 class="h2 text-info mt-2">
+                    Je suis un <span data-text="Developpeur Web...">Developpeur Web ...</span>
                 </h3>
-                <p>Passionnée par le développement web et le design, je transforme des idées en expériences numériques fluides et engageantes. Parcourez mon portfolio pour découvrir mes projets et mes compétences .</p>
-                <div class="btn-soc">
-                    <a href="pdf/Document1.pdf" class="btn" target="_blank"> Voir mon CV</a>
-                    <div class="soc">
-                        <a href="https://www.linkedin.com/in/ra%C3%AFssa-messan-26b564319/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                        <a href="https://github.com/SukunaRyomenn" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a href="https://wa.me/22899370173" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-                        
-                    </div>
-                </div> 
-            </div>
-            <div class="home-img">
-                <div class="img-box">
-                    <div class="img-item">
-                        <img src="profile_linkdin-removebg-preview.png" alt="">
+                <p class="lead text-light mt-3">
+                    Passionnée par le développement web et le design, je transforme des idées en expériences numériques fluides et engageantes. Parcourez mon portfolio pour découvrir mes projets et mes compétences.
+                </p>
 
-                    </div>
-
+                <div class="d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center gap-3 mt-3">
+                    <a href="pdf/Document1.pdf" class="btn btn-info" target="_blank">Voir mon CV</a>
+                    <a href="https://www.linkedin.com/in/ra%C3%AFssa-messan-26b564319/" target="_blank" class="btn btn-primary">
+                        <i class="bi bi-linkedin"></i> LinkedIn
+                    </a>
+                   
+                    <a href="tel:+22899370173" class="btn btn-outline-info">
+                        <i class="bi bi-telephone-fill"></i> +228 99 37 01 73
+                    </a>
+                    <a href="https://wa.me/22899370173" target="_blank" class="btn btn-success">
+                        <i class="bi bi-whatsapp"></i> WhatsApp
+                    </a>
                 </div>
-
             </div>
 
+            <!-- Image -->
+            <div class="home-img mt-4 mt-lg-0">
+                <div class="img-box mx-auto mx-lg-0">
+                    <img src="profile_linkdin-removebg-preview.png" class="rounded-circle img-fluid shadow-lg" alt="Raissa">
+                </div>
+            </div>
         </section>
 
+        <section id="about-section" class="py-5  text-light">
+    <!-- Intro -->
+    <div class="container text-center mb-5 section-animate" id="about">
+        <h1 class="display-5 fw-bold gradient-text">Bienvenue sur mon portfolio</h1>
+        <p class="lead mt-3">
+            Explorez mes projets, découvrez mon univers créatif et voyez comment je peux donner vie à vos idées.
+        </p>
+        <a href="#portfolio" class="btn btn-info mt-3">
+            Découvrir mes projets
+        </a>
+    </div>
+
+    <!-- About Me -->
+    <div class="container about-me">
+        <div class="row align-items-center">
+            <!-- Photo -->
+            <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                <div class="img-box mx-auto">
+                    <img src="5.jpg" alt="Raissa" class="rounded-circle shadow-lg img-fluid">
+                </div>
+            </div>
+
+            <!-- Texte -->
+            <div class="col-lg-8" >
+                <h2 class="gradient-text mb-3">À propos de moi</h2>
+                <p>
+                    Bonjour, je suis MESSAN Dédé Astrid-Raissa, développeur web ayant reçu une formation en développement d'application à l'UCAO-UUT. Créatif et rigoureux, je conçois des interfaces modernes et intuitives en utilisant des outils comme Figma, Tailwind, Laravel, et WordPress. Mon objectif est de transformer des idées en expériences web fonctionnelles et attrayantes. Curieux et motivé, je m'engage à apprendre en continu pour rester à jour dans ce domaine en constante évolution.
+                </p>
+
+                <!-- Boutons -->
+                <div class="d-flex flex-wrap gap-3 mt-3">
+                    <a href="#portfolio" class="btn btn-info d-flex align-items-center justify-content-center">
+                        <i class="bi bi-folder2-open me-2"></i> Voir mon portfolio
+                    </a>
+                    <a href="#contact" class="btn btn-outline-info d-flex align-items-center justify-content-center">
+                        <i class="bi bi-envelope-fill me-2"></i> Contactez-moi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="competences" class="competences-section section-animate">
+    <div class="introduction">
         <div class="intro">
-            <h1>Bienvenue sur mon portfolio</h1>
-            <p>Explorez mes projets, découvrez mon univers créatif et voyez comment je peux donner vie à vos idées.</p>
-            <a href="#portfolio" class="btn">Découvrir mes projets</a>
+            <h1>Mes compétences</h1>
+            <p>Découvrez mes expertises et les outils que je maîtrise pour mener à bien vos projets.</p>
         </div>
+    </div>
 
-
-        <div class="about-me" id="about">
-
-            <div class="color-ball"></div>
-            <div class="color-ball"></div>
-            <div class="color-ball"></div>
-            <div class="color-ball"></div>
-
-            
-               
-                
-           
-
-            <div class="about-container">
-                <div class="photo">
-                    <img src="5.jpg" alt="Your Name">
-                </div>
-                <div class="about-text">
-                    <h2>À propos de moi</h2>
-                    <p>
-                        Bonjour, je suis MESSAN Dédé Astrid-Raissa ,Développeur web ayant reçue une formation en developpement d'application a l'UCAO-UUT créatif et rigoureux, je conçois des interfaces modernes et intuitives en utilisant des outils comme Figma, Tailwind, Laravel, et WordPress. Mon objectif est de transformer des idées en expériences web fonctionnelles et attrayantes. Curieux et motivé, je m'engage à apprendre en continu pour rester à jour dans ce domaine en constante évolution.
-                    </p>
-                    <div class="buttons">
-                        <a href="#portfolio" class="btn">Voir mon portfolio</a>
-                        <a href="#contact" class="button">Contactez-moi</a>
-                    </div>
-                </div>
-            </div>
-
-           
+    <div class="skills-container">
+        <div class="skill">
+            <img src="html-removebg-preview.png" alt="HTML Logo">
+            <p>HTML</p>
         </div>
+        <div class="skill">
+            <img src="css-removebg-preview.png" alt="CSS Logo">
+            <p>CSS</p>
+        </div>
+        <div class="skill">
+            <img src="angular-removebg-preview.png" alt="Angular Logo">
+            <p>Angular</p>
+        </div>
+        <div class="skill">
+            <img src="js-removebg-preview.png" alt="JavaScript Logo">
+            <p>JavaScript</p>
+        </div>
+        <div class="skill">
+            <img src="word-removebg-preview.png" alt="WordPress Logo">
+            <p>WordPress</p>
+        </div>
+        <div class="skill">
+            <img src="figma-removebg-preview.png" alt="Figma Logo">
+            <p>Figma</p>
+        </div>
+        <div class="skill">
+            <img src="boot-removebg-preview.png" alt="Bootstrap Logo">
+            <p>Bootstrap</p>
+        </div>
+        <div class="skill">
+            <img src="wind-removebg-preview.png" alt="Tailwind Logo">
+            <p>Tailwind</p>
+        </div>
+        <div class="skill">
+            <img src="canva-removebg-preview.png" alt="Canva Logo">
+            <p>Canva</p>
+        </div>
+        <div class="skill">
+            <img src="laravel-removebg-preview.png" alt="Laravel Logo">
+            <p>Laravel</p>
+        </div>
+    </div>
+    <div class="services section-animate" id="services">
+    <div class="intro">
+        <h1>Mes Services</h1>
+        <p>Des solutions adaptées à vos besoins pour une présence en ligne performante.</p>
+    </div>
 
-        <section>
-            <div class="introduction" id="competences">
-                <div class="intro">
-                    <h1>Mes compétences</h1>
-                    <p>Découvrez mes expertises et les outils que je maîtrise pour mener à bien vos projets.</p>
-                    
+    <div class="services-container">
+        <!-- Service 1 -->
+        <div class="service">
+            <div class="content">
+                <div class="front">
+                    <img src="graphic-design.png" alt="Service 1 Logo">
+                    <p>Création de site web</p>
                 </div>
-
+                <div class="back">
+                    <p>Créer des sites web performants, sécurisés et adaptés à tous les appareils grâce à des technologies modernes.</p>
+                </div>
             </div>
-           
-
-          
-        
-            <div class="skills-container" >
-                <div class="skill">
-                  <img src="html-removebg-preview.png" alt="HTML Logo">
-                  <p>HTML</p>
+        </div>
+        <!-- Service 2 -->
+        <div class="service">
+            <div class="content">
+                <div class="front">
+                    <img src="wireframe.png" alt="Service 2 Logo">
+                    <p>Design UI/UX</p>
                 </div>
-                <div class="skill">
-                  <img src="css-removebg-preview.png" alt="CSS Logo">
-                  <p>CSS</p>
+                <div class="back">
+                    <p>Concevoir des interfaces utilisateur modernes et intuitives pour garantir une expérience utilisateur fluide et engageante</p>
                 </div>
-                <div class="skill">
-                  <img src="angular-removebg-preview.png" alt="PHP Logo">
-                  <p>Angular</p>
-                </div>
-                <div class="skill">
-                  <img src="js-removebg-preview.png" alt="JavaScript Logo">
-                  <p>JavaScript</p>
-                </div>
-                
-                    <div class="skill">
-                      <img src="word-removebg-preview.png" alt="Python Logo">
-                      <p>Wordpress</p>
-                    </div>
-                    <div class="skill">
-                      <img src="figma-removebg-preview.png" alt="React Logo">
-                      <p>Figma</p>
-                    </div>
-                    <div class="skill">
-                      <img src="boot-removebg-preview.png" alt="Angular Logo">
-                      <p>Bootstrap</p>
-                    </div>
-                    <div class="skill">
-                      <img src="wind-removebg-preview.png" alt="Node.js Logo">
-                      <p>Tailwind</p>
-                    </div>
-                    <div class="skill">
-                      <img src="canva-removebg-preview.png" alt="MySQL Logo">
-                      <p>Canvas</p>
-                    </div>
-                    <div class="skill">
-                      <img src="laravel-removebg-preview.png" alt="GitHub Logo">
-                      <p>Laravel</p>
-                    </div>
             </div>
-
-           
-
-            <div class="services" id="services">
-                <div class="intro">
-                    <h1>Mes Services</h1>
-                    <p> Des solutions adaptées à vos besoins pour une présence en ligne performante.</p>
-                    
+        </div>
+        <!-- Service 3 -->
+        <div class="service">
+            <div class="content">
+                <div class="front">
+                    <img src="online-shop.png" alt="Service 3 Logo">
+                    <p>Site eCommerce</p>
                 </div>
-
-                <div class="services-container">
-                    <!-- Service 1 -->
-                    <div class="service">
-                      <div class="content">
-                        <div class="front">
-                          <img src="graphic-design.png" alt="Service 1 Logo">
-                          <p>Création de site web</p>
-                        </div>
-                        <div class="back">
-                          <p>Créer des sites web performants, sécurisés et adaptés à tous les appareils grâce à des technologies modernes.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Service 2 -->
-                    <div class="service">
-                      <div class="content">
-                        <div class="front">
-                          <img src="wireframe.png" alt="Service 2 Logo">
-                          <p>Design UI/UX</p>
-                        </div>
-                        <div class="back">
-                          <p>Concevoir des interfaces utilisateur modernes et intuitives pour garantir une expérience utilisateur fluide et engageante</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Service 3 -->
-                    <div class="service">
-                      <div class="content">
-                        <div class="front">
-                            <img src="online-shop.png" alt="Service 1 Logo">
-                          <p>Site eCommerce</p>
-                        </div>
-                        <div class="back">
-                          <p>Développer des boutiques en ligne dynamiques, faciles à gérer, avec des solutions adaptées pour booster vos ventes</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Service 4 -->
+                <div class="back">
+                    <p>Développer des boutiques en ligne dynamiques, faciles à gérer, avec des solutions adaptées pour booster vos ventes</p>
+                </div>
+            </div>
+        </div>
+         <!-- Service 4 -->
                     <div class="service">
                       <div class="content">
                         <div class="front">
@@ -248,8 +252,8 @@
                   </div>
 
             </div>
-
-            <div class="intro">
+        <!-- etc... -->
+          <div class="intro">
               <h1>Mes Projets</h1>
               <p> Vous pouvez voir ici un aperçu de certaines  mes réalisations, entre design et développement.</p>
              
@@ -315,36 +319,10 @@
         }
     });
         </script>
-
-          
-
-
-
-            <!-- <div class="contact-container">-->
-                <!-- Section des informations (Adresse, Email, Téléphone) -->
-                
-            
-                <!-- Section formulaire et photo -->
-               <!--  <div class="form-section">
-                  <div class="photo">
-                    <img src="8.jpg" alt="Contact Image">
-                  </div>
-                  <div class="contact-form">
-                    <form action="https://api.web3forms.com/submit" method="POST">
-                      <input type="hidden" name="access_key" value="your-access-key-here">
-                      <h2>Contactez-nous</h2>
-                      <input type="text" name="name" placeholder="Nom Prénom" required>
-                      <input type="email" name="email" placeholder="Email" required>
-                      <textarea name="message" placeholder="Votre message" required></textarea>
-                      <button type="submit">Envoyer</button>
-                    </form>
-                  </div>
-                </div>
-              </div>-->
-
-
-
-              <div class="contact" id="contact">
+   
+    </div>
+</div>
+ <div class="contact" >
                 <div class="intro">
                   <h1>Me contacter !</h1>
                   <p> Besoin d'un service ? Discutons ensemble de votre projet ! Je suis à votre écoute.</p>
@@ -452,96 +430,42 @@
                       </form>
 
                     </div>
-
+                    
                   </div>
                 </div>
+                 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-              </div>
-            
-              <!-- FontAwesome pour les icônes -->
-              <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-           
+  
+</section>
 
-           
-             
-            
-       
-            
-            
-            
-
-        </section>
-        <footer>
+  <footer>
           <p>&copy; 2025 Portfolio-Raissa. Tous droits réservés.</p>
         </footer>
 
-       
-        
-
-       
 
     </main>
-  
 
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- FontAwesome pour les icônes -->
+   
+       <script>
+  // Sélectionne toutes les sections animables
+  const sections = document.querySelectorAll('.section-animate');
 
-  
-    <script>
-      function toggleMenu() {
-          const nav = document.querySelector(".navbar ul");
-          nav.classList.toggle("active");
+  // Crée l'observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible'); // Ajoute la classe visible
       }
-  </script>
+    });
+  }, { threshold: 0.1 }); // Quand 10% de la section est visible
 
-
-
-
-  
-
-
-           
-
+  // Observe chaque section
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>    
 </body>
 </html>
